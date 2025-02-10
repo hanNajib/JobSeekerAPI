@@ -62,6 +62,9 @@ class ApplicationController extends Controller
                     'job_vacancy_id' => $req->vacancy_id
                 ]);
 
+                $availablePos->apply_capacity += 1;
+                $availablePos->save();
+
             }
 
             DB::commit();
