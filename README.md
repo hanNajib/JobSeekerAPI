@@ -49,6 +49,74 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
+## LKS 2023 Practice Problem
+
+This project is a practice problem for the LKS (Lomba Kompetensi Siswa) 2023. It is designed to help students prepare for the competition by working on a real-world application using the Laravel framework.
+
+## Latihan Soal LKS 2023
+
+Proyek ini adalah latihan soal LKS Jatim 2023 untuk persiapan LKS saya
+
+## Deskripsi Proyek dan Tugas
+
+Kita semua tahu bahwa saat ini banyak lulusan yang menganggur. Oleh karena itu, pemerintah menunjuk Anda sebagai orang yang kompeten untuk membuat platform pencari kerja. Tujuan dari platform ini adalah agar masyarakat dapat menemukan pekerjaan di platform tanpa harus datang langsung ke lokasi perusahaan dan juga dapat melihat kapan dan di mana masyarakat dapat datang ke lokasi perusahaan.
+
+### Deskripsi Proyek dan Tugas
+
+Pendaftaran melibatkan platform masyarakat (mendaftar ke platform dan melamar pekerjaan), platform perusahaan (memberikan pekerjaan, melihat dan menerima/menolak pendaftaran dari masyarakat), dan platform petugas (memperbarui data perusahaan, memeriksa validitas data masyarakat). Namun, ruang lingkup pekerjaan Anda pada modul ini hanya untuk membuat platform masyarakat. Tugas Anda adalah membuat REST API aplikasi pekerjaan masyarakat menggunakan salah satu kerangka kerja PHP yang disediakan (Laravel).
+
+## Dokumentasi API
+
+### Autentikasi
+
+#### Login
+- **Endpoint:** `POST /api/v1/auth/login`
+- **Deskripsi:** Melakukan login pengguna.
+- **Parameter:**
+  - `email` (string, required)
+  - `password` (string, required)
+
+#### Logout
+- **Endpoint:** `POST /api/v1/auth/logout`
+- **Deskripsi:** Melakukan logout pengguna.
+- **Middleware:** `VerifyToken`
+
+### Validasi
+
+#### Buat Validasi
+- **Endpoint:** `POST /api/v1/validations`
+- **Deskripsi:** Membuat validasi baru.
+- **Middleware:** `VerifyToken`
+
+#### Dapatkan Validasi
+- **Endpoint:** `GET /api/v1/validations`
+- **Deskripsi:** Mendapatkan daftar validasi.
+- **Middleware:** `VerifyToken`
+
+### Lowongan Pekerjaan
+
+#### Dapatkan Lowongan
+- **Endpoint:** `GET /api/v1/job_vacancies`
+- **Deskripsi:** Mendapatkan daftar lowongan pekerjaan.
+- **Middleware:** `VerifyToken`
+
+#### Dapatkan Detail Lowongan
+- **Endpoint:** `GET /api/v1/job_vacancies/{id}`
+- **Deskripsi:** Mendapatkan detail lowongan pekerjaan berdasarkan ID.
+- **Middleware:** `VerifyToken`
+
+### Aplikasi
+
+#### Ajukan Lamaran
+- **Endpoint:** `POST /api/v1/applications`
+- **Deskripsi:** Mengajukan lamaran pekerjaan.
+- **Middleware:** `VerifyToken`
+
+#### Dapatkan Semua Lamaran
+- **Endpoint:** `GET /api/v1/applications`
+- **Deskripsi:** Mendapatkan semua lamaran pekerjaan yang diajukan.
+- **Middleware:** `VerifyToken`
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
