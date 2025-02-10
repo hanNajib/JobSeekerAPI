@@ -30,7 +30,5 @@ Route::prefix('v1')->group(function() {
             Route::post('', [ApplicationController::class, 'apply']);
             Route::get('', [ApplicationController::class, 'getAll']);
         });
-
-
     });
 });
