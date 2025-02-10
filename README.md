@@ -49,13 +49,9 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
-## LKS 2023 Practice Problem
-
-This project is a practice problem for the LKS (Lomba Kompetensi Siswa) 2023. It is designed to help students prepare for the competition by working on a real-world application using the Laravel framework.
-
 ## Latihan Soal LKS 2023
 
-Proyek ini adalah latihan soal LKS Jatim 2023 untuk persiapan LKS saya
+Proyek ini adalah latihan soal LKS Jatim 2023 untuk persiapan LKS
 
 ## Deskripsi Proyek dan Tugas
 
